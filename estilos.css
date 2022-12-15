@@ -1,0 +1,106 @@
+body, html{
+margin: 0;
+padding: 0;
+background-color: black;
+}
+
+header{
+  background-color: bisque;
+  text-align: center;
+  padding: 1px;
+
+
+}
+.wrapper{
+  height: 100vh;
+  overflow-x: hidden;
+  perspective: 2px;
+  transform-style: preserve-3d;
+}
+
+.secao{
+  margin: 0px;
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  transform-style: inherit;
+}
+
+.secao::before{
+  content:" ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -10;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: translateZ(-1px) scale(1.5);
+}
+
+.conteudo{
+  position: absolute;
+  width: 50%;
+  height: 150px;
+  top: 25%;
+  padding: 20px;
+  background-color: wheat;
+  color: midnightblue;
+  box-shadow: 3px 3px 3px;
+}
+.fundo1::before{
+  background-image: url(img/stark\ flag.jpg);
+}
+
+.fundo2::before{
+  background-image: url(img/maxresdefault.jpg);
+  
+}
+
+.fundo3::before{
+  background-image: url(img/Winterfell.jpg);
+  margin-bottom: 0%;
+  
+}
+
+.conteudo2{
+  position: absolute;
+  width: 50%;
+  top: 35%;
+  padding: 20px;
+  background-color: wheat;
+  color:black;
+  box-shadow: 3px 3px 3px;
+  left: 50%;
+}
+
+.conteudo1{
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  padding: 20px;
+  background-color: wheat;
+  color: midnightblue;
+  box-shadow: 3px 3px 3px;
+  left: 20%;
+}
+
+.a{
+  text-decoration: none;
+  background-color: bisque;
+  left: 50%;
+  position: absolute;
+  display: flex;
+}
+
+.rodape{
+  text-align: center;
+  background-color: bisque;
+  font-size: large;
+  text-decoration: none;
+  padding: 0%;
+  text-transform: capitalize;
+}
+
